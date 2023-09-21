@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="456dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.31">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="211dp"
+            android:layout_height="224dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/bmicalculatorimage" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="328dp"
+            android:layout_height="52dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="sushma"
+            android:inputType="text"
+            android:textColorHint="#8D6E63"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="329dp"
+            android:layout_height="54dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/weight_in_kg"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            tools:ignore="TextFields" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="226dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#F09336"
+            android:onClick="calculate"
+            android:text="@string/calculate"
+            android:textColor="#63322B"
+            android:textColorLink="#F07336"
+            android:textSize="20sp"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="330dp"
+            android:layout_height="35dp"
+            android:textSize="24sp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="318dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="28dp"
+        android:gravity="clip_horizontal|center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="219dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/abril_fatface"
+            android:text="@string/bmi"
+            android:textColor="#EF6C00"
+            android:textSize="96sp"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:text="@string/calculator"
+            android:textColor="#2C8BA1"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
